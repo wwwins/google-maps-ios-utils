@@ -29,7 +29,7 @@
             marker.icon = [self generateClusterIconWithCount:[cluster count]];
         }
         else {
-            marker.icon = [GMSMarker markerImageWithColor:[UIColor greenColor]];
+            marker.icon = [GMSMarker markerImageWithColor:[UIColor colorWithRed:0.800 green:0.200 blue:0.200 alpha:1.000]];
         }
         marker.position = cluster.position;
         marker.map = map;
@@ -48,7 +48,7 @@
 
     // set stroking color and draw circle
     [[UIColor colorWithRed:1 green:1 blue:1 alpha:0.8] setStroke];
-    [[UIColor blueColor] setFill];
+    [[UIColor colorWithRed:0.800 green:0.200 blue:0.200 alpha:1.000] setFill];
 
     CGContextSetLineWidth(ctx, inset);
 
